@@ -106,7 +106,7 @@ input::placeholder {
 }
 
 .gray-100 {
-  color: var(--text-tertiary);
+  color: var(--text-secondary);
 }
 
 .bg-black-100 {
@@ -121,6 +121,18 @@ input::placeholder {
   font-size: 48px;
   color: var(--text-primary);
   transition: color 0.3s ease;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 30px;
+  }
 }
 
 .w-min-content {
