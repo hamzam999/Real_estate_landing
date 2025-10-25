@@ -1,27 +1,117 @@
+/* CSS Variables for Theme System */
+:root[data-theme="dark"] {
+  --bg-primary: url('./images/bg-dark-1.jpg') no-repeat center center fixed;
+  --bg-primary-navbar: #121420ce;
+  --bg-secondary: #1b1f33;
+  --bg-card: #121420ce;
+  --text-primary: #ffffff;
+  --text-navlink: #ffffff;
+  --text-secondary: #c3c5ce;
+  --text-tertiary: #5e6379;
+  --text-quaternary: #545b79;
+  --border-color: #3d4467;
+  --gray-150: #3d4467;
+  --heart-border: #121420;
+  --swiper-btn-bg: rgb(18 20 32 / 50%);
+  --like-bg: rgb(18 20 32 / 75%);
+  --footer-border: #1b1f33;
+  --body-bg-overlay: rgba(18, 20, 32, 0.404);
+}
+
+:root[data-theme="light"] {
+  --bg-primary: url('./images/bg-light.jpg') no-repeat center center fixed;
+  --bg-primary-navbar: #f5f7fa2d;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-navlink: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-tertiary: #6b6b6b;
+  --text-quaternary: #8a8a8a;
+  --border-color: #d1d5db;
+  --gray-150: #d1d5db;
+  --heart-border: #f5f7fa;
+  --swiper-btn-bg: rgb(255 255 255 / 80%);
+  --like-bg: rgb(255 255 255 / 90%);
+  --footer-border: #e5e7eb;
+  --body-bg-overlay: rgba(255, 255, 255, 0.836);
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #121420;
+  background: var(--bg-primary);
+  /* backdrop-filter: blur(10px); */
+  color: var(--text-primary);
+  transition: background-image 0.3s ease, color 0.3s ease;
+}
+/* Background overlay for the body */
+body::before {
+  content: '';
+  position: fixed;
+  /* top: 0;
+  left: 0; */
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--body-bg-overlay); /* default for dark theme */
+  transition: background 0.3s ease;
 }
 
 :root {
   --gray-150: #3d4467;
 }
 
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+/* Paragraph and text styles */
+p span {
+  transition: color 0.3s ease;
+}
+
+.text-secondary {
+  color: var(--text-secondary)!important;
+  transition: color 0.3s ease;
+}
+.text-primary {
+  color: var(--text-primary)!important;
+  transition: color 0.3s ease;
+}
+.text-primary:hover {
+  color: var(--text-tertiary)!important;
+  transition: color 0.3s ease;
+}
+/* Input field styles */
+input {
+  color: var(--text-primary);
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input::placeholder {
+  color: var(--text-tertiary);
+  transition: color 0.3s ease;
+}
+
 .gray-50 {
-  color: #c3c5ce;
+  color: var(--text-secondary);
 }
 
 .gray-90 {
-  color: #5e6379;
+  color: var(--text-secondary);
 }
 
 .gray-100 {
-  color: #545b79;
+  color: var(--text-tertiary);
 }
 
 .bg-black-100 {
-  background-color: #1b1f33;
+  background-color: var(--bg-card);
+  transition: background-color 0.3s ease;
 }
 
 .title {
@@ -29,7 +119,8 @@ body {
   max-width: 710px;
   margin: 0 0 30px;
   font-size: 48px;
-  color: white;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .w-min-content {
@@ -67,20 +158,23 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background-color: white;
+  background-color: var(--text-primary);
+  transition: background-color 0.3s ease;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: white;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-size: 20px;
   padding: 10px 15px;
-  background-color: rgb(18 20 32 / 50%);
+  background-color: var(--swiper-btn-bg);
   border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
 .swiper-button-next:after {
@@ -111,7 +205,8 @@ body {
 }
 
 .loading .container div h1 {
-  color: white;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 .loading .container .features {
@@ -158,6 +253,11 @@ body {
 .loading .container div .cards .card .card-body img {
   max-width: 190px;
 }
+  
+.hover-card:hover {
+  scale: 1.05;
+  transition: scale 0.3s ease;
+}
 
 /* End loading style */
 
@@ -180,21 +280,26 @@ body {
   padding: 5px 14px;
   font-weight: normal;
   font-size: 14px;
-  color: #c3c5ce;
+  color: var(--text-secondary);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.properties .tabs button:hover {
+  color: #ffffff!important;
 }
 
 .properties .container .tabs button.active {
-  color: white;
+  color: #ffffff!important;
 }
 
 .like {
   position: absolute;
-  color: white;
-  background-color: rgb(18 20 32 / 75%);
+  color: var(--text-primary);
+  background-color: var(--like-bg);
   padding: 10px;
   border-radius: 50%;
   top: 10px;
   right: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .card .card-body div img {
@@ -251,11 +356,12 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--text-primary);
   width: 100%;
   height: 150px;
   background-color: #0000004a;
   border-radius: 10px;
+  transition: color 0.3s ease;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -294,7 +400,7 @@ body {
   left: 70%;
   transform: translateX(-50%);
   background-color: #356df6;
-  color: white;
+  color: #ffffff;
   font-size: 10px;
   letter-spacing: 0.3px;
   border-radius: 20px;
@@ -320,7 +426,8 @@ body {
   right: 70%;
   transform: translateX(50%);
   background-color: #356df6;
-  color: white;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
   font-size: 10px;
   letter-spacing: 0.3px;
   border-radius: 20px;
@@ -348,8 +455,9 @@ body {
 }
 
 .developers .swiper .swiper-slide div {
-  border: 1px solid var(--gray-150);
+  border: 1px solid var(--border-color);
   border-radius: 100px;
+  transition: border-color 0.3s ease;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
@@ -358,6 +466,8 @@ body {
 
 .developers .mySwiper .swiper-slide div h6 {
   width: max-content;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 /* End developers */
@@ -377,8 +487,9 @@ body {
 }
 
 .join .mySwiper .swiper-wrapper .swiper-slide {
-  border: 1px solid #3d4467;
+  border: 1px solid var(--border-color);
   border-radius: 12px;
+  transition: border-color 0.3s ease;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
@@ -408,9 +519,10 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #1b1f33;
+  background-color: var(--bg-card);
   border-radius: 12px;
   z-index: -10;
+  transition: background-color 0.3s ease;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
@@ -431,12 +543,17 @@ body {
 }
 
 .subscribe .container div {
-  border: 1px solid #545b79;
+  border: 1px solid var(--text-quaternary);
   border-radius: 7px;
+  transition: border-color 0.3s ease;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+}
+
+.subscribe .container div input {
+  transition: color 0.3s ease;
 }
 
 .subscribe .container div input:focus {
@@ -448,8 +565,9 @@ body {
 /* Start footer */
 
 footer {
-  border-top: 1px solid #3d4467;
+  border-top: 1px solid var(--border-color);
   overflow-x: clip;
+  transition: border-color 0.3s ease;
 }
 
 footer .container div a {
@@ -462,19 +580,19 @@ footer .container div ul h6 {
 }
 
 footer .container div ul li {
-  color: white;
+  color: var(--text-primary);
   list-style: none;
   font-weight: 100;
   cursor: pointer;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
 }
 
 footer .container div ul li:hover {
-  color: #a8a8a8;
+  color: var(--text-tertiary);
 }
 
 footer .container div:has(img) {
@@ -482,7 +600,8 @@ footer .container div:has(img) {
 }
 
 footer .container div:has(p a) {
-  border-top: 1px solid #1b1f33;
+  border-top: 1px solid var(--footer-border);
+  transition: border-color 0.3s ease;
 }
 
 footer .container div ul:first-child {
@@ -501,7 +620,8 @@ footer .container div ul li:nth-child(2) {
 footer div span {
   width: 100%;
   height: 1px;
-  background-color: #1b1f33;
+  background-color: var(--footer-border);
+  transition: background-color 0.3s ease;
 }
 
 /* End footer */

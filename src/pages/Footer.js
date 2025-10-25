@@ -1,20 +1,30 @@
 import { Container } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { useTheme } from "../context/ThemeContext";
 
 function Footer() {
+  const { theme } = useTheme();
   return (
-    <footer>
+    <footer className="bg-black-100">
       <Container>
         <div className="d-flex justify-content-between flex-column flex-md-row flex-wrap pt-5 pb-4">
           <motion.div
             initial={{ x: -200 }}
             whileInView={{ x: 0 }}
             transition={{ duration: 0.8 }}
-          >
+            viewport={{ once: true }}
+            >
             <img
               src={require("../images/logo/logo.png")}
               alt="logo"
               className="mb-3"
+              style={{
+                filter:
+                  theme === "light"
+                    ? "invert(1)"
+                    : "none",
+                transition: "filter 0.3s ease",
+              }}
             />
             <p className="gray-100">
               Please contact us if you have any specific <br /> idea or request.
@@ -26,7 +36,8 @@ function Footer() {
             whileInView={{ x: 0 }}
             transition={{ duration: 0.8 }}
             className="d-flex"
-          >
+            viewport={{ once: true }}
+            >
             <div className="me-5">
               <h6 className="gray-100 text-uppercase mb-2 fw-normal">
                 Company
@@ -54,6 +65,7 @@ function Footer() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           className="d-flex justify-content-between flex-column flex-md-row flex-wrap gray-100 pt-3"
+          viewport={{ once: true }}
         >
           <p>© 2023 Renting-Platform. All rights reserved</p>
         </motion.div>

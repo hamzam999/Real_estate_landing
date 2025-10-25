@@ -8,10 +8,11 @@ import Loading from "./pages/Header";
 import Partners from "./pages/Partners";
 import Properties from "./pages/Properties";
 import Subscribe from "./pages/Subscribe";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <BrowserRouter>
         <NavBar />
         <Loading />
@@ -23,7 +24,7 @@ function App() {
         <Subscribe />
         <Footer />
       </BrowserRouter>
-    </>
+    </ThemeProvider>
   );
 }
 

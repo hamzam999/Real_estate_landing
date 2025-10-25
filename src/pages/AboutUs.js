@@ -10,6 +10,7 @@ function AboutUs() {
           initial={{ x: -200 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <AnimationTitles title="What is Renting-Platform?" className="title" />
           <p className="gray-50 mb-5">
@@ -26,6 +27,7 @@ function AboutUs() {
           initial={{ x: 200 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
           className="d-flex flex-column"
         >
           <div className="d-flex">

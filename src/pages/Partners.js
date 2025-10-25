@@ -6,15 +6,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 // Import Framer-motion
 import { motion } from "framer-motion";
+import { useTheme } from "../context/ThemeContext";
 
 function Partners() {
+  const { theme } = useTheme();
   return (
     // Start partners
     <motion.div
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 0.8 }}
-    className="partners">
+    className="partners"
+    viewport={{ once: true }}
+    >
       <Container className="d-flex align-items-center flex-nowrap overflow-hidden">
         <Swiper
           className="mySwiper"
@@ -39,22 +43,58 @@ function Partners() {
           }}
         >
           <SwiperSlide>
-            <img src={require("../images/partners/stellar.png")} alt="img" />
+            <img src={require("../images/partners/stellar.png")} alt="img" style={{
+              filter:
+                theme === "light"
+                  ? "invert(1)"
+                  : "none",
+              transition: "filter 0.3s ease",
+            }}/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/blockport.png")} alt="img" />
+            <img src={require("../images/partners/blockport.png")} alt="img" style={{
+              filter:
+                theme === "light"
+                  ? "invert(1)"
+                  : "none",
+              transition: "filter 0.3s ease",
+            }}/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/fantom.png")} alt="img" />
+            <img src={require("../images/partners/fantom.png")} alt="img" style={{
+              filter:
+                theme === "light"
+                  ? "invert(1)"
+                  : "none",
+              transition: "filter 0.3s ease",
+            }}/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/onfido.png")} alt="img" />
+            <img src={require("../images/partners/onfido.png")} alt="img" style={{
+              filter:
+                theme === "light"
+                  ? "invert(1)"
+                  : "none",
+              transition: "filter 0.3s ease",
+            }}/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/tr.png")} alt="img" />
+            <img src={require("../images/partners/tr.png")} alt="img" style={{
+              filter:
+                theme === "light"
+                  ? "invert(1)"
+                  : "none",
+              transition: "filter 0.3s ease",
+            }}/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={require("../images/partners/qa.png")} alt="img" />
+            <img src={require("../images/partners/qa.png")} alt="img" style={{
+              filter:
+                theme === "light"
+                  ? "invert(1)"
+                  : "none",
+              transition: "filter 0.3s ease",
+            }}/>
           </SwiperSlide>
         </Swiper>
       </Container>

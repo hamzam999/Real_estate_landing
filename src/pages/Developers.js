@@ -18,6 +18,7 @@ function Developers() {
           initial={{ x: -80 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <Swiper
             className="mySwiper overflow-none justify-content-start"
@@ -45,7 +46,7 @@ function Developers() {
                   src={require("../images/developers/logo-01.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">UA real house</h6>
+                <h6 className=" m-0">UA real house</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -55,7 +56,7 @@ function Developers() {
                   src={require("../images/developers/logo-02.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">ERA Ukraine Real Estate</h6>
+                <h6 className=" m-0">ERA Ukraine Real Estate</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -65,7 +66,7 @@ function Developers() {
                   src={require("../images/developers/logo-03.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Happy Neighbor</h6>
+                <h6 className=" m-0">Happy Neighbor</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -75,7 +76,7 @@ function Developers() {
                   src={require("../images/developers/logo-04.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">American Home Agents</h6>
+                <h6 className=" m-0">American Home Agents</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -85,7 +86,7 @@ function Developers() {
                   src={require("../images/developers/logo-05.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Ukr Home Agents</h6>
+                <h6 className=" m-0">Ukr Home Agents</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -95,7 +96,7 @@ function Developers() {
                   src={require("../images/developers/logo-06.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">UA real estate agency</h6>
+                <h6 className=" m-0">UA real estate agency</h6>
               </div>
             </SwiperSlide>
           </Swiper>
@@ -104,6 +105,7 @@ function Developers() {
           initial={{ x: 80 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <Swiper
             className="mySwiper overflow-none"
@@ -129,7 +131,7 @@ function Developers() {
                   src={require("../images/developers/logo-07.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Red Oak Realty</h6>
+                <h6 className=" m-0">Red Oak Realty</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -139,7 +141,7 @@ function Developers() {
                   src={require("../images/developers/logo-08.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Dream House</h6>
+                <h6 className=" m-0">Dream House</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -149,7 +151,7 @@ function Developers() {
                   src={require("../images/developers/logo-09.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">
+                <h6 className=" m-0">
                   Leading Real Estate Companies
                 </h6>
               </div>
@@ -161,7 +163,7 @@ function Developers() {
                   src={require("../images/developers/logo-10.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Home Partners of World</h6>
+                <h6 className=" m-0">Home Partners of World</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -171,7 +173,7 @@ function Developers() {
                   src={require("../images/developers/logo-11.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">Red Oak Realty</h6>
+                <h6 className=" m-0">Red Oak Realty</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -181,7 +183,7 @@ function Developers() {
                   src={require("../images/developers/logo-13.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">American Home Agents</h6>
+                <h6 className=" m-0">American Home Agents</h6>
               </div>
             </SwiperSlide>
             <SwiperSlide>
@@ -191,7 +193,7 @@ function Developers() {
                   src={require("../images/developers/logo-12.png")}
                   alt="img"
                 />
-                <h6 className="text-white m-0">UA real estate agency</h6>
+                <h6 className=" m-0">UA real estate agency</h6>
               </div>
             </SwiperSlide>
           </Swiper>

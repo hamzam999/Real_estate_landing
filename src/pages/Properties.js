@@ -53,13 +53,13 @@ function Properties() {
             }}
           >
             <SwiperSlide>
-              <Button className="ms-0 bg-black-100 border-0" onClick={active}>
+              <Button className="ms-0 bg-black-100 border-0 active text-secondary" onClick={active}>
                 All
               </Button>
             </SwiperSlide>
             <SwiperSlide>
               <Button
-                className="ms-0 bg-black-100 border-0 active"
+                className="ms-0 bg-black-100 border-0"
                 onClick={active}
               >
                 Cottage
@@ -98,6 +98,7 @@ function Properties() {
           initial={{ x: -80 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
           <Swiper
             slidesPerView={4}
@@ -131,7 +132,7 @@ function Properties() {
           >
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -141,18 +142,18 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">
+                  <h5 className="mt-2  fw-normal">
                     Cottage «Forrest 1»
                   </h5>
-                  <p className="gray-90">@Red Oak Realty</p>
+                  <p className="text-secondary">@Red Oak Realty</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={9} m={45} s={8} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">29.71 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">29.71 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -160,7 +161,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -173,16 +174,16 @@ function Properties() {
                       onClick={like}
                     ></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Freshness</h5>
-                  <p className="gray-90">@ERA Ukraine Real Estate</p>
+                  <h5 className="mt-2  fw-normal">Freshness</h5>
+                  <p className="text-secondary">@ERA Ukraine Real Estate</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={29} m={15} s={10} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">14.81 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">14.81 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -190,7 +191,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -200,16 +201,16 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Wish house</h5>
-                  <p className="gray-90">@UA real estate agency</p>
+                  <h5 className="mt-2  fw-normal">Wish house</h5>
+                  <p className="text-secondary">@UA real estate agency</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={23} m={6} s={1} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">16.62 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">16.62 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -217,7 +218,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -227,16 +228,16 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Spruce</h5>
-                  <p className="gray-90">@Dream House</p>
+                  <h5 className="mt-2  fw-normal">Spruce</h5>
+                  <p className="text-secondary">@Dream House</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={10} m={30} s={58} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">17.01 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">17.01 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -244,7 +245,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -254,16 +255,16 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Residence Rybna</h5>
-                  <p className="gray-90">@UA real estate agency</p>
+                  <h5 className="mt-2  fw-normal">Residence Rybna</h5>
+                  <p className="text-secondary">@UA real estate agency</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={18} m={21} s={8} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">29.71 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">29.71 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -271,7 +272,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -281,16 +282,16 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Blue Sky</h5>
-                  <p className="gray-90">@ERA Ukraine Real Estate</p>
+                  <h5 className="mt-2  fw-normal">Blue Sky</h5>
+                  <p className="text-secondary">@ERA Ukraine Real Estate</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={23} m={16} s={11} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">17.31 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">17.31 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -298,7 +299,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -308,18 +309,18 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">
+                  <h5 className="mt-2  fw-normal">
                     Cottage «Forrest 1»
                   </h5>
-                  <p className="gray-90">@Red Oak Realty</p>
+                  <p className="text-secondary">@Red Oak Realty</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={9} m={45} s={8} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">29.71 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">29.71 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -327,7 +328,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -340,16 +341,16 @@ function Properties() {
                       onClick={like}
                     ></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Freshness</h5>
-                  <p className="gray-90">@ERA Ukraine Real Estate</p>
+                  <h5 className="mt-2  fw-normal">Freshness</h5>
+                  <p className="text-secondary">@ERA Ukraine Real Estate</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={29} m={15} s={10} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">14.81 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">14.81 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -357,7 +358,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -367,16 +368,16 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Wish house</h5>
-                  <p className="gray-90">@UA real estate agency</p>
+                  <h5 className="mt-2  fw-normal">Wish house</h5>
+                  <p className="text-secondary">@UA real estate agency</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={23} m={6} s={1} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">16.62 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">16.62 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -384,7 +385,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -394,16 +395,16 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Spruce</h5>
-                  <p className="gray-90">@Dream House</p>
+                  <h5 className="mt-2  fw-normal">Spruce</h5>
+                  <p className="text-secondary">@Dream House</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={10} m={30} s={58} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">17.01 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">17.01 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -411,7 +412,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -421,16 +422,16 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Residence Rybna</h5>
-                  <p className="gray-90">@UA real estate agency</p>
+                  <h5 className="mt-2  fw-normal">Residence Rybna</h5>
+                  <p className="text-secondary">@UA real estate agency</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={18} m={21} s={8} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">29.71 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">29.71 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>
@@ -438,7 +439,7 @@ function Properties() {
             </SwiperSlide>
             <SwiperSlide>
               {" "}
-              <Card className="bg-black-100 rounded">
+              <Card className="bg-black-100 rounded hover-card">
                 <Card.Body className="p-2">
                   <div className="rounded overflow-hidden position-relative">
                     <Card.Img
@@ -448,16 +449,16 @@ function Properties() {
                     />
                     <i className="fa-regular fa-heart like" onClick={like}></i>
                   </div>
-                  <h5 className="mt-2 text-white fw-normal">Blue Sky</h5>
-                  <p className="gray-90">@ERA Ukraine Real Estate</p>
+                  <h5 className="mt-2  fw-normal">Blue Sky</h5>
+                  <p className="text-secondary">@ERA Ukraine Real Estate</p>
                   <div className="d-flex">
                     <div className="me-3">
                       <CountDown h={23} m={16} s={11} />
-                      <span className="gray-90">Remaining Time</span>
+                      <span className="text-secondary">Remaining Time</span>
                     </div>
                     <div>
-                      <h6 className="text-white">17.31 ETH</h6>
-                      <span className="gray-90">Current Bid</span>
+                      <h6 className="">17.31 ETH</h6>
+                      <span className="text-secondary">Current Bid</span>
                     </div>
                   </div>
                 </Card.Body>

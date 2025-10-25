@@ -24,6 +24,7 @@
   width: 180px;
   text-align: center;
   margin-right: 10px;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .wc-error {
@@ -34,4 +35,5 @@
   color: red;
   font-size: 12px;
   white-space: nowrap;
+  transition: color 0.3s ease;
 } 

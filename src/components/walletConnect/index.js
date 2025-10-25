@@ -84,7 +84,7 @@ const WalletConnect = () => {
   }
 
   return (
-    <div className="wc-container ms-lg-5">
+    <div className="wc-container ms-lg-5 d-none d-lg-inline-block">
       {account ? (
         chainId !== SEPOLIA_CHAIN_ID ? (
           <Button
@@ -96,9 +96,12 @@ const WalletConnect = () => {
           </Button>
         ) : (
           <div className="wc-account-row">
-            <div className="wc-account">
+             <Button
+              variant="outline-primary"
+              size="sm"
+              className="wc-btn mx-2">
               {account.slice(0, 6)}...{account.slice(-4)}
-            </div>
+              </Button>
             <Button
               variant="outline-secondary"
               size="sm"
